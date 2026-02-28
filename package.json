@@ -1,0 +1,32 @@
+{
+  "name": "cy-project-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"cy:open": "cypress open",
+"cy:run": "cypress run",
+"cy:smoke": "cypress run --spec \"cypress/e2e/0-smoke/**/*\"",
+"cy:modules": "cypress run --spec \"cypress/e2e/1-modules/**/*\"",
+"cy:regression": "cypress run --spec \"cypress/e2e/2-regression/**/*\"",
+"test:ci:smoke": "npm run cy:smoke",
+"test:ci:modules": "npm run cy:modules",
+"test:ci:regression": "npm run cy:regression",
+"report:merge": "mochawesome-merge reports/mocha/*.json > reports/mochawesome.json",
+"report:html": "marge reports/mochawesome.json -f report -o reports/html",
+"test:ci": "npm run test:ci:smoke"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^10.3.0",
+    "cypress": "^15.11.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.4",
+    "cypress-real-events": "^1.15.0",
+    "cypress-xpath": "^2.0.1",
+    "dotenv": "^17.3.1"
+  }
+}
