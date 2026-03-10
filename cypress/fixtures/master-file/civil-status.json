@@ -1,0 +1,12 @@
+{
+  "add": {
+    "civilStatus": "Separated"
+  },
+  "edit": {
+    "civilStatus": "Separated",
+    "updatedcivilStatus": "Legally Separated"
+  },
+  "validation": {
+    "requiredCodeMessage": "fill"
+  }
+}
