@@ -13,6 +13,9 @@ json: true,
 },
 setupNodeEvents(on, config) {
 require("cypress-mochawesome-reporter/plugin")(on);
+config.env.HR_COMPANY = process.env.HR_COMPANY;
+      config.env.HR_USER = process.env.HR_USER;
+      config.env.HR_PASS = process.env.HR_PASS;
 return config;
 },
 },

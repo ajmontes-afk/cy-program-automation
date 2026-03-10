@@ -38,3 +38,27 @@ cy.get('input[id="gl_comcde"]').type('QATEAM')
                     cy.get('.ajs-button.print').filter(':visible').click()
  });
 });
+
+
+//begin here
+import { LoginPage } from "../../../support/pages/LoginPage";
+import { DashboardPage } from "../../../support/pages/DashboardPage";
+import { PositionTypePage } from "../../../support/pages/PositionTypePage";
+import testData from "../../../fixtures/master-file/position-type.json";
+
+describe("HR Master File - Position Type", () => {
+
+  beforeEach(() => {
+    LoginPage.open();
+    LoginPage.loginAsHrUser();
+    LoginPage.assertLoginSuccess();
+
+    DashboardPage.openHrApp();
+    DashboardPage.openMasterFile();
+    DashboardPage.openPositionType();
+
+    PositionTypePage.assertPageLoaded();
+  });
+
+  // tests continue here...
+});
