@@ -1,0 +1,52 @@
+{
+  "pageLoad": [
+    {
+      "testCaseId": "POS-CIVIL-001",
+      "description": "should load the civil status master file page"
+    }
+  ],
+  "add": [
+    {
+      "testCaseId": "POS-CIVIL-010",
+      "description": "should add a Married civil status",
+      "name": "Married"
+    },
+    {
+      "testCaseId": "POS-CIVIL-011",
+      "description": "should add a Single civil status",
+      "name": "Single"
+    },
+    {
+      "testCaseId": "POS-CIVIL-012",
+      "description": "should add a Widowed civil status",
+      "name": "Widowed"
+    }
+  ],
+  "edit": [
+    {
+      "testCaseId": "POS-TYPE-020",
+      "description": "should edit a Legally Separated civil status",
+      "originalName": "Legally Separated",
+      "updatedName": "Separated"
+    }
+  ],
+  "delete": [
+    {
+      "testCaseId": "POS-TYPE-030",
+      "description": "should delete a Divorced civil status",
+      "name": "Divorced"
+    }
+  ],
+  "validation": [
+    {
+      "testCaseId": "POS-TYPE-040",
+      "description": "should validate required name",
+      "requiredNameMessage": "Civil Status is required"
+    },
+    {
+      "testCaseId": "POS-TYPE-041",
+      "description": "should not allow spaces-only civil status name",
+      "requiredNameMessage": "Civil Status is required"
+    }
+  ]
+}

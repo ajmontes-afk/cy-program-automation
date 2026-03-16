@@ -1,0 +1,6 @@
+[
+  {
+    "testCaseId": "POS-CIVIL-001",
+    "description": "should load the civil status master file page"
+  }
+]

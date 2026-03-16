@@ -1,0 +1,80 @@
+{
+  "pageLoad": [
+    {
+      "testCaseId": "POS-CIVIL-001",
+      "description": "should load the civil status master file page"
+    }
+  ],
+  "add": [
+    {
+      "testCaseId": "POS-CIVIL-010",
+      "description": "should add a Married civil status",
+      "name": "Married"
+    },
+    {
+      "testCaseId": "POS-CIVIL-011",
+      "description": "should add a Single civil status",
+      "name": "Single"
+    },
+    {
+      "testCaseId": "POS-CIVIL-012",
+      "description": "should add a Widowed civil status",
+      "name": "Widowed"
+    }
+  ],
+  "edit": [
+    {
+      "testCaseId": "POS-TYPE-020",
+      "description": "should edit a Legally Separated civil status",
+      "originalName": "Legally Separated",
+      "updatedName": "Separated"
+    }
+  ],
+  "delete": [
+    {
+      "testCaseId": "POS-TYPE-030",
+      "description": "should delete a Divorced civil status",
+      "name": "Divorced"
+    }
+  ],
+  "validation": [
+    {
+      "testCaseId": "POS-TYPE-040",
+      "description": "should validate required name",
+      "requiredNameMessage": "Please fill required field(s)"
+    }
+  ],
+  "duplicate": [
+    {
+      "testCaseId": "POS-TYPE-050",
+      "description": "should not allow duplicate civil status name",
+      "name": "Married",
+      "duplicateMessage": "Civil Status ({name}) already Exist"
+    }
+  ],
+  "spacesOnly": [
+    {
+      "testCaseId": "POS-TYPE-051",
+      "description": "should not allow spaces-only civil status name",
+      "name": "   ",
+      "requiredNameMessage": "Please fill required field(s)"
+    }
+  ],
+  "maxLength": [
+    {
+      "testCaseId": "POS-TYPE-052",
+      "description": "should not allow overly long civil status name",
+      "name": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "maxLengthMessage": "25"
+    }
+  ],
+  "editToDuplicate": [
+    {
+      "testCaseId": "POS-TYPE-053",
+      "description": "should not allow editing to a duplicate civil status name",
+      "firstName": "Divorced",
+      "secondName": "Married",
+      "duplicateMessage": "Civil Status ({name}) already Exist"
+    }
+  ]
+}

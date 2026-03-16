@@ -1,0 +1,8 @@
+[
+  {
+    "testCaseId": "POS-TYPE-020",
+    "description": "should edit a Legally Separated civil status",
+    "originalName": "Legally Separated",
+    "updatedName": "Separated"
+  }
+]
