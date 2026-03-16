@@ -1,0 +1,8 @@
+[
+  {
+    "testCaseId": "POS-TYPE-051",
+    "description": "should not allow spaces-only civil status name",
+    "name": "   ",
+    "requiredNameMessage": "Please fill required field(s)"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "testCaseId": "POS-TYPE-050",
+    "description": "should not allow duplicate civil status name",
+    "name": "Married",
+    "duplicateMessage": "Civil Status ({name}) already Exist"
+  }
+]

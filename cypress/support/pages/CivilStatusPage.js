@@ -5,6 +5,7 @@
 // `{ ... }` means this value is an object, like a box that can hold many actions.
 // This object holds all the actions for the Civil Status page.
 export const CivilStatusPage = {
+  
   // `assertPageLoaded` is the name of this action.
   // `()` means this action does not need any extra input.
   // `{ ... }` holds the code that will run for this action.
@@ -26,6 +27,32 @@ export const CivilStatusPage = {
     cy.get("#pager_default_add").should("be.visible").click();
   },
 
+  // `enterName` is the name of this action.
+  // `(name)` means this action needs one input called `name`.
+  // That `name` will be the text we want to type.
+  // This types a name into the name input box.
+  enterName(name) {
+    this.getVisibleNameInput()
+      .clear()
+      .type(name);
+  },
+
+   assertNameValue(value) {
+    this.getVisibleNameInput().should("have.value", value);
+  },
+
+  assertNameMaxLength(maxLength) {
+    this.getVisibleNameInput().should("have.attr", "maxlength", `${maxLength}`);
+  },
+
+  assertNameIsLimitedTo(name, maxLength) {
+    this.assertNameMaxLength(maxLength);
+    this.assertNameValue(name.slice(0, maxLength));
+  },
+
+   getVisibleNameInput() {
+    return cy.get("#modalField_cvlstat").filter(":visible").last();
+  },
   // `entercivilStatus` is the name of this action.
   // `(civilStatus)` means this action needs one input called `civilStatus`.
   // That `civilStatus` will be the text we want to type.
@@ -67,7 +94,7 @@ export const CivilStatusPage = {
     // Open the form.
     this.clickAdd();
     // Fill in the civil status.
-    this.entercivilStatus(civilStatus);
+    this.enterName(civilStatus);
     // Save the new civil status.
     this.clickSave();
   },
@@ -129,6 +156,14 @@ export const CivilStatusPage = {
   confirmDelete() {
     // Find the visible confirmation button and click it.
     cy.get(".ajs-primary > .print").filter(":visible").first().click();
+  },
+
+  confirmSuccessfulDelete() {
+    // Find the OK button in the popup, make sure we can see it, then click it.
+    //cy.get(
+     // ".ajs-in > .ajs-modal > .ajs-dialog > .ajs-footer > .ajs-primary > .ajs-button",
+    //).click();
+     cy.get('.ajs-button').filter(':visible').contains('OK').click();
   },
 
   // `confirmSuccessful` is the name of this action.

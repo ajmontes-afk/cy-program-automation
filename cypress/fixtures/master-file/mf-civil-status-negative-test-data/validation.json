@@ -1,0 +1,7 @@
+[
+  {
+    "testCaseId": "POS-TYPE-040",
+    "description": "should validate required name",
+    "requiredNameMessage": "Please fill required field(s)"
+  }
+]

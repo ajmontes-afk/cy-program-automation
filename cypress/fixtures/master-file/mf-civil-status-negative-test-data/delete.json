@@ -1,0 +1,7 @@
+[
+  {
+    "testCaseId": "POS-TYPE-030",
+    "description": "should delete a Divorced civil status",
+    "name": "Divorced"
+  }
+]

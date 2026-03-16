@@ -1,0 +1,9 @@
+[
+  {
+    "testCaseId": "POS-TYPE-053",
+    "description": "should not allow editing to a duplicate civil status name",
+    "firstName": "Divorced",
+    "secondName": "Married",
+    "duplicateMessage": "Civil Status ({name}) already Exist"
+  }
+]

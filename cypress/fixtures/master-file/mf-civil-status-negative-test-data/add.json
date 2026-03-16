@@ -1,0 +1,17 @@
+[
+  {
+    "testCaseId": "POS-CIVIL-010",
+    "description": "should add a Married civil status",
+    "name": "Married"
+  },
+  {
+    "testCaseId": "POS-CIVIL-011",
+    "description": "should add a Single civil status",
+    "name": "Single"
+  },
+  {
+    "testCaseId": "POS-CIVIL-012",
+    "description": "should add a Widowed civil status",
+    "name": "Widowed"
+  }
+]
