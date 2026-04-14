@@ -1,0 +1,47 @@
+[
+  {
+    "testCaseId": "POS-ITEMCLASS-010",
+    "description": "should add a TEA item classification",
+    "itemClassDesc": "TEA"
+  },
+  {
+    "testCaseId": "POS-ITEMCLASS-011",
+    "description": "should add a DL ADD ONS item classification",
+    "itemClassDesc": "DL ADD ONS"
+  },
+  {
+    "testCaseId": "POS-ITEMCLASS-012",
+    "description": "should add a Beverage Ingredients item classification",
+    "itemClassDesc": "Beverage Ingredients"
+  },
+  {
+    "testCaseId": "POS-ITEMCLASS-013",
+    "description": "should add a Beverages item classification",
+    "itemClassDesc": "Beverages"
+  },
+  {
+    "testCaseId": "POS-ITEMCLASS-014",
+    "description": "should add a Drinkware Accessories item classification",
+    "itemClassDesc": "Drinkware Accessories"
+  },
+  {
+    "testCaseId": "POS-ITEMCLASS-015",
+    "description": "should add a Finished Good item classification",
+    "itemClassDesc": "Finished Good"
+  },
+  {
+    "testCaseId": "POS-ITEMCLASS-016",
+    "description": "should add a Oil-Based item classification",
+    "itemClassDesc": "Oil-Based"
+  },
+  {
+    "testCaseId": "POS-ITEMCLASS-017",
+    "description": "should add a Packaging Materials item classification",
+    "itemClassDesc": "Packaging Materials"
+  },
+  {
+    "testCaseId": "POS-ITEMCLASS-018",
+    "description": "should add a Raw Materials item classification",
+    "itemClassDesc": "Raw Materials"
+  }
+]

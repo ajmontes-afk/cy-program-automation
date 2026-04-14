@@ -1,0 +1,129 @@
+{
+  "pageLoaditemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-001",
+      "description": "Should load the Item Classification master file page"
+    }
+  ],
+  "additemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-010",
+      "description": "should add a TEA item classification",
+      "itemClassDesc": "TEA",
+      "__EMPTY": ""
+    },
+    {
+      "testCaseId": "POS-ITEMCLASS-011",
+      "description": "should add a DL ADD ONS item classification",
+      "itemClassDesc": "DL ADD ONS",
+      "__EMPTY": ""
+    },
+    {
+      "testCaseId": "POS-ITEMCLASS-012",
+      "description": "should add a Beverage Ingredients item classification",
+      "itemClassDesc": "Beverage Ingredients",
+      "__EMPTY": ""
+    },
+    {
+      "testCaseId": "POS-ITEMCLASS-013",
+      "description": "should add a Beverages item classification",
+      "itemClassDesc": "Beverages",
+      "__EMPTY": ""
+    },
+    {
+      "testCaseId": "POS-ITEMCLASS-014",
+      "description": "should add a Drinkware Accessories item classification",
+      "itemClassDesc": "Drinkware Accessories",
+      "__EMPTY": ""
+    },
+    {
+      "testCaseId": "POS-ITEMCLASS-015",
+      "description": "should add a Finished Good item classification",
+      "itemClassDesc": "Finished Good",
+      "__EMPTY": ""
+    },
+    {
+      "testCaseId": "POS-ITEMCLASS-016",
+      "description": "should add a Oil-Based item classification",
+      "itemClassDesc": "Oil-Based",
+      "__EMPTY": ""
+    },
+    {
+      "testCaseId": "POS-ITEMCLASS-017",
+      "description": "should add a Packaging Materials item classification",
+      "itemClassDesc": "Packaging Materials",
+      "__EMPTY": ""
+    },
+    {
+      "testCaseId": "POS-ITEMCLASS-018",
+      "description": "should add a Raw Materials item classification",
+      "itemClassDesc": "Raw Materials",
+      "__EMPTY": ""
+    }
+  ],
+  "edititemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-019",
+      "description": "should edit the Alcoholic Beverages item classification",
+      "origitemClassDesc": "Alcoholic Beverages",
+      "updateitemClassDesc": "Alcohol - Beverage"
+    }
+  ],
+  "deleteitemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-020",
+      "description": "should delete the Alcoholic Beverages item classification",
+      "itemClassDesc": "Alcoholic Beverages",
+      "__EMPTY": ""
+    }
+  ],
+  "validationitemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-021",
+      "description": "should validate required item classification description",
+      "requireditemClassDescMessage": "Item Classification is required. Please input Item Classification to proceed.",
+      "__EMPTY": ""
+    }
+  ],
+  "duplicateitemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-022",
+      "description": "should not allow duplicate item classification description",
+      "itemClassDesc": "ADD ONS",
+      "duplicateMessage": "Item Classification already exists."
+    }
+  ],
+  "spacesOnlyitemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-023",
+      "description": "should not allow spaces-only item classification description",
+      "itemClassDesc": "   ",
+      "requireditemClassDescMessage": "Item Classification is required. Please input Item Classification to proceed."
+    }
+  ],
+  "maxLengthitemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-024",
+      "description": "should not allow overly long item classification description",
+      "itemClassDesc": "This is a very long string that exceeds the maximum allowed length.",
+      "maxLengthMessage": "Item Classification must not exceed 30 characters."
+    }
+  ],
+  "editToDuplicateitemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-025",
+      "description": "should not allow editing a duplicate item classification description",
+      "firstitemClassDesc": "Drinkware",
+      "seconditemClassDesc": "Drinkware Accessories",
+      "duplicateMessage": "Item Classification already exists."
+    }
+  ],
+  "specialCharsitemClass": [
+    {
+      "testCaseId": "POS-ITEMCLASS-026",
+      "description": "should not allow special characters as an item classification description",
+      "itemClassDesc": "\"© ™ ® à á â ñ ä ¢ £ ¥ € ! @ # $ ^ * _ + = < > ? ` ~ \\\" | \\\\ [ ] ; :",
+      "errorMessage": "ITEM CLASSIFICATION DESCRIPTION should only contain letters and numbers."
+    }
+  ]
+}

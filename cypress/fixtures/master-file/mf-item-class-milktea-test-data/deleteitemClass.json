@@ -1,0 +1,7 @@
+[
+  {
+    "testCaseId": "POS-ITEMCLASS-020",
+    "description": "should delete the Alcoholic Beverages item classification",
+    "itemClassDesc": "Alcoholic Beverages"
+  }
+]

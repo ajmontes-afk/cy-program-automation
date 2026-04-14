@@ -1,0 +1,9 @@
+[
+  {
+    "testCaseId": "POS-ITEMCLASS-025",
+    "description": "should not allow editing a duplicate item classification description",
+    "firstitemClassDesc": "Drinkware",
+    "seconditemClassDesc": "Drinkware Accessories",
+    "duplicateMessage": "Item Classification already exists."
+  }
+]

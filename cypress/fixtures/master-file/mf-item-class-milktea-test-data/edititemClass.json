@@ -1,0 +1,8 @@
+[
+  {
+    "testCaseId": "POS-ITEMCLASS-019",
+    "description": "should edit the Alcoholic Beverages item classification",
+    "origitemClassDesc": "Alcoholic Beverages",
+    "updateitemClassDesc": "Alcohol - Beverage"
+  }
+]

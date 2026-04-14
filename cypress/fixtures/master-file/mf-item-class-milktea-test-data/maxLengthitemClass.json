@@ -1,0 +1,8 @@
+[
+  {
+    "testCaseId": "POS-ITEMCLASS-024",
+    "description": "should not allow overly long item classification description",
+    "itemClassDesc": "This is a very long string that exceeds the maximum allowed length.",
+    "maxLengthMessage": "Item Classification must not exceed 30 characters."
+  }
+]
