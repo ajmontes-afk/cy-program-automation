@@ -1,0 +1,8 @@
+[
+  {
+    "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-006",
+    "description": "should not allow special characters as an item classification description",
+    "itemClassDesc": "! @ # $ ^ * _ + = < > ? `",
+    "errorMessage": "ITEM CLASSIFICATION DESCRIPTION should only contain letters and numbers."
+  }
+]

@@ -1,0 +1,125 @@
+Excel to JSON Converter – Simple Guide
+
+Purpose
+Convert Excel test data to JSON files for Cypress tests.
+
+--------------------------------------------------
+
+1. Where to put Excel files
+
+Place Excel files here:
+
+cypress/fixtures/excel/
+
+Example:
+
+cypress/fixtures/excel/position-type-test-data.xlsx
+
+
+--------------------------------------------------
+
+2. Install requirement
+
+Run once:
+
+npm install xlsx
+
+
+--------------------------------------------------
+
+3. Convert one Excel file to one JSON
+
+Command:
+
+npm run xlsx:one -- position-type-test-data.xlsx
+
+Output file:
+
+cypress/fixtures/master-file/position-type-test-data.json
+
+
+--------------------------------------------------
+
+4. Convert Excel tabs to separate JSON files
+
+Command:
+
+npm run xlsx:tabs -- position-type-test-data.xlsx
+
+Output:
+
+cypress/fixtures/master-file/position-type-test-data/
+
+Example files:
+
+pageLoad.json
+add.json
+edit.json
+delete.json
+validation.json
+
+
+--------------------------------------------------
+
+5. Convert ALL Excel files automatically
+
+Command:
+
+npm run xlsx:all
+
+This converts every Excel file inside:
+
+cypress/fixtures/excel/
+
+
+--------------------------------------------------
+
+6. Excel file format
+
+Each sheet must follow this format:
+
+Row 1 : Column headers
+Row 2+: Test data
+
+
+Example:
+
+Position Type Test Data - add
+
+testCaseId | description | name
+
+POS-TYPE-010 | should add regular employee | Regular Employee
+POS-TYPE-011 | should add probationary employee | Probationary Employee
+
+
+--------------------------------------------------
+
+7. Example Cypress usage
+
+import testData from "../../../fixtures/master-file/position-type.json";
+
+testData.add.forEach(({ testCaseId, description, name }) => {
+
+  it(`[${testCaseId}] ${description}`, () => {
+
+    PositionTypePage.clickAdd()
+    PositionTypePage.enterName(name)
+    PositionTypePage.clickSave()
+
+  })
+
+})
+
+
+--------------------------------------------------
+
+Quick Commands
+
+Convert one file
+npm run xlsx:one -- position-type-test-data.xlsx
+
+Convert tabs
+npm run xlsx:tabs -- position-type-test-data.xlsx
+
+Convert all files
+npm run xlsx:all

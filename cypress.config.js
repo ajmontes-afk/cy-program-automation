@@ -13,10 +13,19 @@ json: true,
 },
 setupNodeEvents(on, config) {
 require("cypress-mochawesome-reporter/plugin")(on);
-config.env.HR_COMPANY = process.env.HR_COMPANY;
+
+      //HR
+      config.env.HR_COMPANY = process.env.HR_COMPANY;
       config.env.HR_USER = process.env.HR_USER;
       config.env.HR_PASS = process.env.HR_PASS;
-return config;
+
+      //CENTRAL
+      config.env.CENTRAL_BASE_URL = process.env.CENTRAL_BASE_URL;
+      config.env.CENTRAL_COMPID = process.env.CENTRAL_COMPID;
+      config.env.CENTRAL_USER = process.env.CENTRAL_USER;
+      config.env.CENTRAL_PASS = process.env.CENTRAL_PASS;     
+      
+      return config;
 },
 },
 });

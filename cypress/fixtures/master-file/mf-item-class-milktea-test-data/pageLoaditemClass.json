@@ -1,0 +1,6 @@
+[
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-001",
+    "description": "Should load the Item Classification master file page"
+  }
+]

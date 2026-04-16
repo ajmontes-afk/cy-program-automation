@@ -1,0 +1,9 @@
+[
+  {
+    "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-005",
+    "description": "should not allow editing a duplicate item classification description",
+    "firstitemClassDesc": "Drinkware",
+    "seconditemClassDesc": "Drinkware Accessories",
+    "duplicateMessage": "Item Classification already exists."
+  }
+]

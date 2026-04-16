@@ -1,0 +1,47 @@
+[
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-002",
+    "description": "should add a TEA item classification",
+    "itemClassDesc": "TEA"
+  },
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-003",
+    "description": "should add a DL ADD ONS item classification",
+    "itemClassDesc": "DL ADD ONS"
+  },
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-004",
+    "description": "should add a Beverage Ingredients item classification",
+    "itemClassDesc": "Beverage Ingredients"
+  },
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-005",
+    "description": "should add a Beverages item classification",
+    "itemClassDesc": "Beverages"
+  },
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-006",
+    "description": "should add a Drinkware Accessories item classification",
+    "itemClassDesc": "Drinkware Accessories"
+  },
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-007",
+    "description": "should add a Finished Good item classification",
+    "itemClassDesc": "Finished Good"
+  },
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-008",
+    "description": "should add a Oil-Based item classification",
+    "itemClassDesc": "Oil-Based"
+  },
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-009",
+    "description": "should add a Packaging Materials item classification",
+    "itemClassDesc": "Packaging Materials"
+  },
+  {
+    "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-010",
+    "description": "should add a Raw Materials item classification",
+    "itemClassDesc": "Raw Materials"
+  }
+]
