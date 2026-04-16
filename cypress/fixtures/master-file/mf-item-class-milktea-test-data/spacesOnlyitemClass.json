@@ -1,6 +1,6 @@
 [
   {
-    "testCaseId": "POS-ITEMCLASS-023",
+    "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-003",
     "description": "should not allow spaces-only item classification description",
     "itemClassDesc": "   ",
     "requireditemClassDescMessage": "Item Classification is required. Please input Item Classification to proceed."

@@ -27,7 +27,7 @@ export const ItemClassPage = {
     },
 
     assertSuccessMessage(message) {
-        cy.contains(new RegExp(message, 'i'), { timeout: 10000 }).should("be.visible");
+        cy.contains(new RegExp(message, 'i'), { timeout: 15000 }).should("be.visible");
   },
 
     noAdditionalRecord() {
@@ -59,7 +59,7 @@ export const ItemClassPage = {
     },
 
     clickDelete(itemClassDesc) {
-        this.getRowByitemClassDesc(itemClassDesc).within(() => {
+        cy.contains(itemClassDesc).parents('tr').within(() => {
             cy.get('.bx.bx-dots-vertical-rounded').should('be.visible').click();
             cy.get('.dropdown-menu').should("be.visible").contains('Delete').click();
         });

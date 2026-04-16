@@ -1,6 +1,6 @@
 [
   {
-    "testCaseId": "POS-ITEMCLASS-021",
+    "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-001",
     "description": "should validate required item classification description",
     "requireditemClassDescMessage": "Item Classification is required. Please input Item Classification to proceed."
   }

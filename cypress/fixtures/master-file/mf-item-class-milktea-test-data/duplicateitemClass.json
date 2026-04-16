@@ -1,6 +1,6 @@
 [
   {
-    "testCaseId": "POS-ITEMCLASS-022",
+    "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-002",
     "description": "should not allow duplicate item classification description",
     "itemClassDesc": "ADD ONS",
     "duplicateMessage": "Item Classification already exists."

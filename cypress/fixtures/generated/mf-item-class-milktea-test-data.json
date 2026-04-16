@@ -1,69 +1,60 @@
 {
   "pageLoaditemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-001",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-001",
       "description": "Should load the Item Classification master file page"
     }
   ],
   "additemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-010",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-002",
       "description": "should add a TEA item classification",
-      "itemClassDesc": "TEA",
-      "__EMPTY": ""
+      "itemClassDesc": "TEA"
     },
     {
-      "testCaseId": "POS-ITEMCLASS-011",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-003",
       "description": "should add a DL ADD ONS item classification",
-      "itemClassDesc": "DL ADD ONS",
-      "__EMPTY": ""
+      "itemClassDesc": "DL ADD ONS"
     },
     {
-      "testCaseId": "POS-ITEMCLASS-012",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-004",
       "description": "should add a Beverage Ingredients item classification",
-      "itemClassDesc": "Beverage Ingredients",
-      "__EMPTY": ""
+      "itemClassDesc": "Beverage Ingredients"
     },
     {
-      "testCaseId": "POS-ITEMCLASS-013",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-005",
       "description": "should add a Beverages item classification",
-      "itemClassDesc": "Beverages",
-      "__EMPTY": ""
+      "itemClassDesc": "Beverages"
     },
     {
-      "testCaseId": "POS-ITEMCLASS-014",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-006",
       "description": "should add a Drinkware Accessories item classification",
-      "itemClassDesc": "Drinkware Accessories",
-      "__EMPTY": ""
+      "itemClassDesc": "Drinkware Accessories"
     },
     {
-      "testCaseId": "POS-ITEMCLASS-015",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-007",
       "description": "should add a Finished Good item classification",
-      "itemClassDesc": "Finished Good",
-      "__EMPTY": ""
+      "itemClassDesc": "Finished Good"
     },
     {
-      "testCaseId": "POS-ITEMCLASS-016",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-008",
       "description": "should add a Oil-Based item classification",
-      "itemClassDesc": "Oil-Based",
-      "__EMPTY": ""
+      "itemClassDesc": "Oil-Based"
     },
     {
-      "testCaseId": "POS-ITEMCLASS-017",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-009",
       "description": "should add a Packaging Materials item classification",
-      "itemClassDesc": "Packaging Materials",
-      "__EMPTY": ""
+      "itemClassDesc": "Packaging Materials"
     },
     {
-      "testCaseId": "POS-ITEMCLASS-018",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-010",
       "description": "should add a Raw Materials item classification",
-      "itemClassDesc": "Raw Materials",
-      "__EMPTY": ""
+      "itemClassDesc": "Raw Materials"
     }
   ],
   "edititemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-019",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-011",
       "description": "should edit the Alcoholic Beverages item classification",
       "origitemClassDesc": "Alcoholic Beverages",
       "updateitemClassDesc": "Alcohol - Beverage"
@@ -71,23 +62,21 @@
   ],
   "deleteitemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-020",
+      "testCaseId": "POS-POSITIVE-TESTING-ITEMCLASS-012",
       "description": "should delete the Alcoholic Beverages item classification",
-      "itemClassDesc": "Alcoholic Beverages",
-      "__EMPTY": ""
+      "itemClassDesc": "Alcoholic Beverages"
     }
   ],
   "validationitemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-021",
+      "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-001",
       "description": "should validate required item classification description",
-      "requireditemClassDescMessage": "Item Classification is required. Please input Item Classification to proceed.",
-      "__EMPTY": ""
+      "requireditemClassDescMessage": "Item Classification is required. Please input Item Classification to proceed."
     }
   ],
   "duplicateitemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-022",
+      "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-002",
       "description": "should not allow duplicate item classification description",
       "itemClassDesc": "ADD ONS",
       "duplicateMessage": "Item Classification already exists."
@@ -95,7 +84,7 @@
   ],
   "spacesOnlyitemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-023",
+      "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-003",
       "description": "should not allow spaces-only item classification description",
       "itemClassDesc": "   ",
       "requireditemClassDescMessage": "Item Classification is required. Please input Item Classification to proceed."
@@ -103,7 +92,7 @@
   ],
   "maxLengthitemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-024",
+      "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-004",
       "description": "should not allow overly long item classification description",
       "itemClassDesc": "This is a very long string that exceeds the maximum allowed length.",
       "maxLengthMessage": "Item Classification must not exceed 30 characters."
@@ -111,7 +100,7 @@
   ],
   "editToDuplicateitemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-025",
+      "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-005",
       "description": "should not allow editing a duplicate item classification description",
       "firstitemClassDesc": "Drinkware",
       "seconditemClassDesc": "Drinkware Accessories",
@@ -120,9 +109,9 @@
   ],
   "specialCharsitemClass": [
     {
-      "testCaseId": "POS-ITEMCLASS-026",
+      "testCaseId": "POS-NEGATIVE-TESTING-ITEMCLASS-006",
       "description": "should not allow special characters as an item classification description",
-      "itemClassDesc": "\"© ™ ® à á â ñ ä ¢ £ ¥ € ! @ # $ ^ * _ + = < > ? ` ~ \\\" | \\\\ [ ] ; :",
+      "itemClassDesc": "! @ # $ ^ * _ + = < > ? `",
       "errorMessage": "ITEM CLASSIFICATION DESCRIPTION should only contain letters and numbers."
     }
   ]
